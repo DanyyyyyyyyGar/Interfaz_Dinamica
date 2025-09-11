@@ -1,0 +1,61 @@
+html{
+    overflow: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: aquamarine;
+    perspective: 1px; /*ayuda a crear espacios y el efecto 3d*/
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.contenedor::before{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: url(../images/Fondoep.jpeg) top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+}
+
+.contenedor::after{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: url(../images/img2.png)  top center;
+    background-size: cover;
+    transform: translateY(-15%) translate(-23%, 10%);
+}
+
+.contenedor .img1{
+    transform: translateZ(-0.5px) scale(1.3,1.4) translate(-63%, 10%);
+}
+
+.img1{
+    width: 40%;
+    left: 100%;
+    position: absolute;
+}
+
+.contenedor, .espacio{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.espacio{
+    background-color: #87b5e1;
+}
