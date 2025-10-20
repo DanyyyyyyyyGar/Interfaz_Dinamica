@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+
+/* 
+     VARIABLES DE COLORES
+ */
+:root {
+    --ColorPrimario: #853ad5;   
+    --ColorSecundario: #b153dd; 
+    --ColorFondo: #7fc7ed;      
+    --ColorTexto: #1a1a1a;      
+}
+
+/* 
+   RESET Y TIPOGRAFÍA
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--ColorTexto);
+}
+
+body {
+    background-color: var(--ColorFondo);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* 
+   HEADER
+ */
+header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: black;
+    letter-spacing: 2px;
+}
+
+/* 
+   TITULO PRINCIPAL
+ */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 700;
+    color: var(--ColorPrimario);
+}
+
+/* 
+   FORMULARIO
+ */
+#formulario_Agregar {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: grid;
+    gap: 15px;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    background: #f2f2f2;
+    border: 2px solid var(--ColorPrimario);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: var(--ColorSecundario);
+    outline: none;
+}
+
+#boton_Agregar {
+    background: var(--ColorSecundario);
+    border: none;
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--ColorTexto);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: background-color 0.3s;
+}
+
+#boton_Agregar:hover {
+    background-color: #ba4394;
+}
+
+/* 
+   CONTENEDOR DE JUEGOS
+ */
+#contenedor_Juegos {
+    margin-top: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    /* mostrar en columna vertical y ocupar el 90% de la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+    width: 90vh; /* 90% de la altura de la ventana */
+    max-height: 90vh;
+    padding: 10px;
+}
+
+/* 
+   TARJETA DE JUEGOS
+ */
+.elementosListaJuegos {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.elementosListaJuegos:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.elementosListaJuegos h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--ColorPrimario);
+}
+
+.elementosListaJuegos p {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* 
+   BOTONES TARJETA
+ */
+.botonEditar, .botonEliminar {
+    border: none;
+    font-weight: 700;
+    padding: 10px 17px;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botonEditar {
+    background: var(--ColorSecundario);
+    color: white;
+}
+
+.botonEditar:hover {
+    background: #52f5f2ac;
+    color: black;
+}
+
+.botonEliminar {
+    background: #e63946;
+    color: white;
+    margin-top: 10px;
+}
+
+.botonEliminar:hover {
+    background: #52f5f2ac;
+    color: black;
+}
+
+/* 
+   MENSAJE DE ERROR
+ */
+#mensaje_error {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #e63946;
+    border-radius: 6px;
+    display: none;
+}
+
+/* 
+   FOOTER
+ */
+footer {
+    text-align: center;
+    color: #444;
+    font-size: 0.9rem;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-style: italic;
+}
+
+/* 
+   RESPONSIVE
+ */
+@media(max-width: 600px) {
+    #formulario_Agregar {
+        gap: 10px;
+    }
+
+    #boton_Agregar {
+        width: 100%;
+    }
+
+    .botonEditar, .botonEliminar {
+        margin-bottom: 10px;
+        width: 48%;
+    }
+
+    .elementosListaJuegos {
+        flex-direction: column;
+    }
+}

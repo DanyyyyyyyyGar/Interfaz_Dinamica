@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/styleMain.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de juegos por jugar</h1>
+        <p>Daniela Alejandra Garcia Corzo</p>
+    </header>
+
+    <form id="formulario_Agregar" class="contenedorFormularioAgregar">
+        <div id="mensaje_error" hidden></div>
+        <div>
+            <input type="text" id="titulo" name="titulo" placeholder="Título">
+        </div>
+        <div>
+            <input type="text" id="descripcion" name="descripcion" placeholder="Descripción">
+        </div>
+        <div>
+            <input type="text" id="plataforma" name="plataforma" placeholder="Plataforma">
+        </div>
+        <button type="button" id="boton_Agregar">Agregar</button>
+    </form>
+
+    <div id="contenedor_Juegos" class="contenedorElementosDeJuego"></div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/ayudas.js"></script>
+    <script type="module" src="js/crud.js"></script>
+    <script type="module" src="js/GestorVJ.js"></script>
+    <script type="module" src="js/definiciones.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/controladorVista.js"></script>
+</body>
+</html>

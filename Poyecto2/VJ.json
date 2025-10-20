@@ -1,0 +1,64 @@
+{
+  "videoJuegos": [
+    {
+      "id": 1,
+      "titulo": "Jedi Survivor",
+      "descripcion": "Secuela de Jedi Fallen Order",
+      "plataforma": "PC"
+    },
+    {
+      "id": 2,
+      "titulo": "Minecraft Story Mode",
+      "descripcion": "Aventura gráfica basada en Minecraft",
+      "plataforma": "PC"
+    },
+    {
+      "id": 3,
+      "titulo": "Resident Evil Revelations",
+      "descripcion": "Spin-off de la saga Resident Evil",
+      "plataforma": "PS4"
+    },
+    {
+      "id": 4,
+      "titulo": "Resident Evil Revelations 2",
+      "descripcion": "Secuela de Revelations",
+      "plataforma": "PS4"
+    },
+    {
+      "id": 5,
+      "titulo": "Resident Evil 0",
+      "descripcion": "Precuela del primer Resident Evil",
+      "plataforma": "PC"
+    },
+    {
+      "id": 6,
+      "titulo": "Resident Evil Village",
+      "descripcion": "Octava entrega principal de la saga",
+      "plataforma": "PS5"
+    },
+    {
+      "id": 7,
+      "titulo": "Terraria",
+      "descripcion": "Juego indie de aventura y construcción",
+      "plataforma": "PC"
+    },
+    {
+      "id": 8,
+      "titulo": "Plants vs Zombies: Garden Warfare",
+      "descripcion": "Shooter en tercera persona",
+      "plataforma": "Xbox"
+    },
+    {
+      "id": 9,
+      "titulo": "Plants vs Zombies: Garden Warfare 2",
+      "descripcion": "Secuela mejorada de Garden Warfare",
+      "plataforma": "Xbox"
+    },
+    {
+      "id": 10,
+      "titulo": "God of War 3",
+      "descripcion": "Conclusión de la trilogía griega",
+      "plataforma": "PS3"
+    }
+  ]
+}
