@@ -1,0 +1,50 @@
+/* Estilos específicos para la página de inicio de sesión */
+.login-page{ padding-top:28px; }
+
+.login-wrap{
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+	padding-top:30px;
+}
+
+.login-box{
+	background:#0b6a6a; /* color de caja oscuro */
+	width:420px;
+	max-width:94%;
+	padding:36px 40px;
+	border-radius:8px;
+	box-shadow: 0 6px 0 rgba(0,0,0,0.06) inset;
+	display:flex;
+	flex-direction:column;
+	gap:18px;
+}
+
+.login-input{
+	height:44px;
+	padding:10px 14px;
+	border-radius:8px;
+	border:0;
+	outline:none;
+	font-size:15px;
+}
+
+.login-input::placeholder{ color:#8b9b9b; }
+
+.login-btn{
+	margin:6px auto 0 auto;
+	background:#7fcbd0; /* boton teal claro */
+	color:#fff;
+	border:0;
+	padding:12px 34px;
+	border-radius:10px;
+	font-weight:700;
+	letter-spacing:0.6px;
+	cursor:pointer;
+}
+
+/* Centrar formulario verticalmente un poco más en pantallas altas */
+@media(min-height:900px){
+	.login-wrap{ padding-top:80px; }
+}
+

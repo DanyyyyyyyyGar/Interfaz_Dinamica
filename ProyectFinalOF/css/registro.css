@@ -1,0 +1,50 @@
+/* Estilos específicos para la página de registro */
+.register-page{ padding-top:28px; }
+
+.register-wrap{
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+	padding-top:30px;
+}
+
+.register-box{
+	background:#0b6a6a; /* color de caja oscuro */
+	width:420px;
+	max-width:94%;
+	padding:32px 36px;
+	border-radius:6px;
+	box-shadow: 0 6px 0 rgba(0,0,0,0.06) inset;
+	display:flex;
+	flex-direction:column;
+	gap:18px;
+}
+
+.reg-input{
+	height:44px;
+	padding:10px 14px;
+	border-radius:8px;
+	border:0;
+	outline:none;
+	font-size:15px;
+}
+
+.reg-input::placeholder{ color:#8b9b9b; }
+
+.reg-btn{
+	margin:6px auto 0 auto;
+	background:#7fcbd0; /* boton teal claro */
+	color:#fff;
+	border:0;
+	padding:12px 34px;
+	border-radius:10px;
+	font-weight:700;
+	letter-spacing:0.6px;
+	cursor:pointer;
+}
+
+@media(max-width:480px){
+	.register-box{ padding:20px; }
+	.reg-input{ height:40px; }
+}
+

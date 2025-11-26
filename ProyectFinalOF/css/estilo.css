@@ -1,0 +1,186 @@
+/* Fuente y reset sencillo */
+* { box-sizing: border-box; }
+html,body{ height:100%; }
+body{
+	margin:0;
+	font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background: #97d6da; /* color de fondo general similar a la imagen */
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+	width:90%;
+	max-width:1150px;
+	margin:0 auto;
+}
+
+/* HEADER */
+.site-header{
+	padding:18px 0;
+}
+.header-inner{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	background:#0a6868; /* teal oscuro */
+	padding:12px 20px;
+	border-radius:12px;
+	color:#fff;
+}
+.brand{
+	display:flex;
+	align-items:center;
+	gap:12px;
+}
+.logo{
+	background:#fff;
+	color:#0a6868;
+	width:46px;
+	height:46px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:6px;
+	font-size:22px;
+}
+.sitename a{
+	font-weight:700;
+	font-size:20px;
+	color:#fff;
+	text-decoration:none;
+	letter-spacing:0.3px;
+}
+
+.main-nav{
+	display:flex;
+	align-items:center;
+	gap:26px;
+}
+.nav-link{
+	color:#fff;
+	text-decoration:none;
+	font-weight:600;
+	letter-spacing:0.3px;
+}
+.nav-link:hover{ opacity:0.9; }
+.user-icon{
+	width:38px;
+	height:38px;
+	border-radius:50%;
+	border:2px solid rgba(255,255,255,0.3);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:14px;
+}
+
+/* MAIN HERO FRAME */
+.page{ padding:26px 0 60px 0; display:flex; align-items:center; justify-content:center; min-height: calc(100vh - 140px); }
+.hero-frame{
+	background: #075759; /* marco exterior más oscuro */
+	padding:22px;
+	border-radius:6px;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.06) inset;
+}
+.hero-inner{
+	height:260px; /* altura aproximada del rectángulo interior */
+	background: linear-gradient(180deg,#d8efe4 0%, #f6d6c7 100%); /* gradiente verde-pastel -> durazno */
+	border:14px solid #0b6a6a; /* marco interno oscuro para dar ese borde grueso */
+	border-radius:2px;
+}
+
+/* Ajustes responsivos simples */
+@media (max-width:640px){
+	.header-inner{ padding:10px; gap:8px; }
+	.nav-link{ font-size:14px; }
+	.hero-inner{ height:180px; }
+}
+/*jueguuito*/
+#gameCanvas {
+    border: 1px solid #000;
+    background-color: #eee;
+}
+.app{ 
+    display:flex; 
+    gap:20px; 
+    align-items:flex-start; 
+    padding:24px; 
+    box-sizing:border-box; 
+    width:100%; 
+}
+
+
+.auth-cards{ display:flex; gap:12px; position:relative; justify-content:flex-end; padding:10px 18px; }
+
+.contenedor{ width: 800px; max-width:95%; position:relative; margin:24px 16px; }
+/*.contenedor .frame{ background:#075b5b; padding:18px; border-radius:6px; }*/
+.contenedor .inner{ background: linear-gradient(#b7d6c7, #ffe2d1); padding:12px; min-height:340px; display:flex; flex-direction:column; gap:12px; align-items:center; }
+.contenedor .inner canvas{ width:100%; max-height:420px; height:320px; display:block; border-radius:12px; }
+
+.contenedor { background: linear-gradient(#b7d6c7, transparent) #ffe2d1; transition: background-color 0.3s linear; overflow:visible; }
+
+.mediodia {
+    background-color: #ffdcf3;
+}
+
+.tarde {
+    background-color: #ffadad;
+}
+
+.noche {
+    background-color: #aca8c7;
+}
+
+/* Canvas-based rendering: old DOM image classes removed. */
+
+#gameCanvas{ display:block; width:100%; height:100%; background: transparent; }
+
+.card{ background:#fff; padding:12px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.15); margin-bottom:12px; }
+.hidden{ display:none; }
+.card h2{ margin-bottom:8px; font-size:18px; }
+.card label{ display:block; margin-top:8px; font-size:13px; color:#333; }
+.card input{ width:100%; padding:6px 8px; margin-top:4px; box-sizing:border-box; }
+.profile-actions{ display:flex; gap:8px; margin-top:8px; }
+#history-list{ max-height:120px; overflow:auto; font-size:13px; }
+.inner ul#historyList, ul#historyList { width:100%; margin:0; padding:8px 12px; list-style: none; max-height:240px; overflow:auto; }
+.credits{ margin-top:12px; color:#ddd; font-size:13px; }
+
+.score{
+    width: 100px;
+    height: 30px;
+
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 10;
+
+    color: #d48871;
+    font-family: Verdana;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.game-over{
+    display: none;
+
+    position: absolute;
+    width: 100%;
+
+
+    text-align: center;
+    color: #7e928b;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+}
+
+@keyframes animarDino{
+    from{
+        background-position-x: -84px;
+    }
+    to{
+        background-position-x: -252px;
+    }
+}
